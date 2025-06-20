@@ -1,0 +1,22 @@
+//mixin
+@mixin flex($justify:center,$align:center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin roundButton($bg:#eee,$color:#888){
+    width: 80%;
+    padding: 0.5rem;
+    background-color: $bg;
+    color: $color;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    &:hover{
+        background-color: #aaa;
+        color: #fff;
+    }
+}
